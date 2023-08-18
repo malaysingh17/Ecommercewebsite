@@ -1,16 +1,17 @@
 const bar = document.getElementById('bar');
-const close=document.getElementById('close');
-const nav=document.getElementById('navbar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
 
 if(bar){
-    bar.addEventListener('click',() => {
+    bar.addEventListener('click', () => {
+      console.log('Mobile Navbar Opened');
         nav.classList.add('active');
     })
 }
 if(close){
-    close.addEventListener('click',() => {
+    close.addEventListener('click', () => {
         nav.classList.remove('active');
-    })
+    }) 
 }
 // Wait for the document to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
